@@ -1,0 +1,8 @@
+services:
+  scraper:
+    build: .
+    env_file: .env
+    volumes:
+      - ./output:/app/output
+    command:
+      ["node", "dist/index.js", "--query", "${QUERY:-Dermatologist in Maadi}"]

@@ -1,0 +1,32 @@
+{
+  "name": "clinic-scraper",
+  "version": "1.0.0",
+  "description": "A containerized microservice that discovers, verifies, and stores contact details for private clinics in Egypt",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "scraper",
+    "clinic",
+    "egypt",
+    "lead-generation"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.7",
+    "groq-sdk": "^0.37.0",
+    "p-limit": "^6.2.0",
+    "serpapi": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
